@@ -1,35 +1,68 @@
-from googletrans import Translator
+import argparse
 import spacy
+from utilities import load_scenarios_from_file
+import json
 
-# abbotts heuristics enum
+#TODO: write function for json file saving
+
+# make argument parser for model choice
+parser = argparse.ArgumentParser(description="Use abbott's heuristics in software engineering scenarios using spacy models.") 
+parser.add_argument("--model", choices=["sm", "md", "lg", "trf"], help="Choose model to use.", required=True)
+args = parser.parse_args()
+
+# Load spacy model
+if args.model == "sm":
+    nlp_en = spacy.load("en_core_web_sm") # size 12 MB
+elif args.model == "md":
+    nlp_en = spacy.load("en_core_web_md") # size 40 MB 
+elif args.model == "lg":
+    nlp_en = spacy.load("en_core_web_lg") # size 560 MB
+elif args.model == "trf":
+    nlp_en = spacy.load("en_core_web_trf") # size 440 MB, 3 GB with dependencies
+else: # cant happen because of "required=True" in parser?
+    raise ValueError("Invalid model. Supported values: 'sm', 'md', 'lg', 'trf'")
 
 
 
-def translate_text(text, source_lang='el', target_lang='en'):
-    translator = Translator()
-    translation = translator.translate(text, src=source_lang, dest=target_lang)
-    return translation.text
+# Load scenarios from JSON file
+scenarios = load_scenarios_from_file('data/scenarios.json')
 
-def load_scenario():
-    pass
+for scenario in scenarios:
+    id = scenario.get("id")
+    
+    en_text = scenario.get("en_text")  
+    if en_text:
+        #print("Scenario ID:", id)
+        doc = nlp_en(en_text)
+        proper_nouns = set()
+        nouns = set()
+        #rimata_energeias = {}
+        #rimata_dilotika_eidous = {}
+        #rimata_dilotika_ktisis = {}
+        #tropiko_rima = {}
+        adjectives = set()
+        for token in doc:
+            if token.pos_ == "PROPN":
+                proper_nouns.add(token.text)
+            if token.pos_ == "NOUN":
+                nouns.add(token.text)
+            if token.pos_ == "ADJ":
+                adjectives.add(token.text)
+        
+        # print("Proper nouns:", proper_nouns)
+        # print("Nouns:", nouns)
+        # print("Adjectives:", adjectives)
+        #print("Model:", model)
+        #for ent in doc.ents:
+        #    print(ent.text, ent.start_char, ent.end_char, ent.label_, spacy.explain(ent.label_))
+        
+        #print("\n\n")
+                
+        # add the sets to the scenario json file
+        scenario["proper_nouns_" + args.model] = list(proper_nouns)
+        scenario["nouns_" + args.model] = list(nouns)
+        scenario["adjectives_" + args.model] = list(adjectives)
 
-
-
-text_el = """O Γιάννης οδηγώντας το περιπολικό του παρατηρεί να βγαίνει καπνός από μία αποθήκη. 
-Η συνοδηγός του Μαρία αναφέρει το θέμα από τον ασύρματό της.​
-Η Μαρία εισάγει τη διεύθυνση του κτηρίου στον  υπολογιστή παλάμης της, 
-μία σύντομη περιγραφή της τοποθεσίας (π.χ. απέναντι από το πάρκο) και ένα επίπεδο συναγερμού.
-Επιβεβαιώνει τα στοιχεία και περιμένει την επιβεβαίωση.​
-Ο Πέτρος ειδοποιείται για το περιστατικό μέσω ηχητικού σήματος από τον υπολογιστή του. 
-Εξετάζει τις πληροφορίες που δόθηκαν από τη Μαρία και επιβεβαιώνει τη λήψη της αναφοράς. 
-Στέλνει ένα πυροσβεστικό όχημα και αποστέλλει τον εκτιμώμενο χρόνο άφιξης (ΕΧΑ) στη Μαρία.​
-Η Μαρία λαμβάνει την επιβεβαίωση και τον ΕΧΑ.​"""
-
-text_en = translate_text(text_el)
-
-nlp = spacy.load("en_core_web_sm")
-
-doc = nlp(text_en)
-for token in doc:
-    if token.pos_ == 'PROPN':
-        print(token.text, token.lemma_, token.pos_, token.tag_, token.dep_, token.shape_, token.is_alpha, token.is_stop)
+# save the updated scenarios to the JSON file
+with open('data/scenarios.json', 'w') as f:
+    json.dump(scenarios, f, ensure_ascii=False, indent=2)
