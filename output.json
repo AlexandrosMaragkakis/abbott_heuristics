@@ -16,102 +16,102 @@
       "is"
     ],
     "proper_nouns_trf": [
-      "Yiannis",
-      "Professor",
       "English",
-      "Dimitris",
-      "Xaplopoulos",
-      "John",
-      "Yannis",
-      "AN",
-      "Ioannis",
-      "Moscholios",
+      "Professor",
       "Assistant",
-      "ID"
+      "Ioannis",
+      "Yannis",
+      "John",
+      "Xaplopoulos",
+      "Moscholios",
+      "Dimitris",
+      "AN",
+      "ID",
+      "Yiannis"
     ],
     "nouns_trf": [
-      "page",
-      "documents",
-      "score",
-      "recommendation",
-      "identity.pdf",
-      "home",
-      "application",
-      "copies",
       "institution",
-      "photo",
-      "confirmation",
-      "form",
-      "email",
-      "individuals",
-      "files",
-      "name",
+      "score",
+      "application",
       "period",
       "attachment",
-      "letter",
-      "department",
+      "email",
       "student",
-      "details",
-      "degree",
-      "graduation",
-      "field",
-      "order",
-      "languages",
       "names",
-      "fields",
-      "contact",
-      "address",
-      "message",
-      "candidature",
-      "identification",
-      "number",
-      "persons",
-      "nomination",
       "system",
-      "emails",
-      "button",
-      "titles",
+      "address",
+      "contact",
+      "recommendation",
+      "graduation",
+      "copies",
+      "message",
+      "individuals",
+      "letter",
       "support",
+      "files",
+      "page",
+      "button",
+      "emails",
+      "home",
+      "documents",
+      "identity.pdf",
+      "field",
+      "identification",
+      "order",
+      "candidature",
+      "ID",
+      "name",
+      "degree",
       "account",
+      "confirmation",
+      "form",
+      "fields",
+      "nomination",
       "MSc",
-      "ID"
+      "number",
+      "department",
+      "titles",
+      "persons",
+      "details",
+      "languages",
+      "photo"
     ],
     "adjectives_trf": [
-      "unique",
-      "digital",
-      "mandatory",
       "New",
-      "prospective",
-      "analytical",
       "following",
+      "audio",
+      "unique",
       "foreign",
-      "audio"
+      "mandatory",
+      "digital",
+      "analytical",
+      "prospective"
     ],
     "modal_verbs": [
       "will"
     ],
     "possession_verbs": [],
     "categorization_verbs": [
+      "wants",
       "Attach",
-      "submit",
+      "supporting",
+      "played",
+      "displays",
       "refreshes",
       "displayed",
-      "corresponding",
-      "supporting",
       "registered",
-      "displays",
-      "wants",
-      "played"
+      "corresponding",
+      "submit"
     ],
     "action_verbs": [
-      "fills",
       "submits",
-      "received",
-      "clicks",
       "logs",
+      "received",
+      "fills",
+      "clicks",
+      "displays",
       "support",
-      "selects",
-      "displays"
+      "selects"
     ]
   },
   {
@@ -131,44 +131,44 @@
       "Dimitris"
     ],
     "nouns_trf": [
-      "page",
-      "professor",
-      "recommendation",
       "application",
-      "management",
+      "attachment",
+      "submission",
+      "email",
+      "system",
+      "recommendation",
+      "letter.pdf",
+      "message",
+      "professor",
+      "letter",
+      "page",
+      "button",
+      "URL",
+      "file",
+      "field",
+      "checkbox",
       "finality",
       "confirmation",
       "form",
-      "letter.pdf",
-      "email",
-      "attachment",
-      "letter",
-      "checkbox",
-      "field",
       "Submit",
-      "message",
-      "file",
-      "URL",
-      "system",
-      "button",
-      "submission"
+      "management"
     ],
     "adjectives_trf": [
-      "mandatory",
-      "informative"
+      "informative",
+      "mandatory"
     ],
     "modal_verbs": [],
     "possession_verbs": [
       "containing"
     ],
     "categorization_verbs": [
-      "submitting",
-      "displays"
+      "displays",
+      "submitting"
     ],
     "action_verbs": [
       "attaches",
-      "selects",
       "clicks",
+      "selects",
       "opens"
     ]
   },
@@ -191,21 +191,21 @@
       "John"
     ],
     "nouns_trf": [
-      "system",
-      "page",
-      "applications",
-      "period",
-      "message",
       "account",
-      "error",
-      "home",
       "application",
+      "period",
+      "home",
+      "message",
+      "MSc",
       "student",
-      "MSc"
+      "system",
+      "applications",
+      "error",
+      "page"
     ],
     "adjectives_trf": [
-      "new",
       "New",
+      "new",
       "prospective"
     ],
     "modal_verbs": [
@@ -213,18 +213,18 @@
     ],
     "possession_verbs": [],
     "categorization_verbs": [
-      "submit",
+      "ended",
+      "wants",
       "expired",
       "displays",
-      "wants",
-      "ended"
+      "submit"
     ],
     "action_verbs": [
+      "logs",
       "submitted",
       "clicks",
-      "logs",
-      "selects",
-      "displays"
+      "displays",
+      "selects"
     ]
   },
   {
@@ -241,44 +241,44 @@
       "is"
     ],
     "proper_nouns_trf": [
-      "Costas",
-      "Kostas"
+      "Kostas",
+      "Costas"
     ],
     "nouns_trf": [
-      "system",
-      "director",
-      "page",
-      "dropdown",
-      "screen",
-      "recommendation",
-      "program",
-      "Statistics",
-      "menu",
       "letters",
-      "option",
+      "dropdown",
+      "menu",
+      "screen",
       "home",
-      "number",
       "statistics",
+      "result",
+      "director",
+      "number",
+      "Statistics",
+      "option",
+      "system",
+      "recommendation",
       "graduate",
-      "result"
+      "page",
+      "program"
     ],
     "adjectives_trf": [],
     "modal_verbs": [],
     "possession_verbs": [],
     "categorization_verbs": [
-      "submitted",
-      "see",
       "clicks",
+      "see",
       "View",
-      "selects",
-      "wants"
+      "wants",
+      "submitted",
+      "selects"
     ],
     "action_verbs": [
-      "submitted",
       "logs",
-      "goes",
+      "answered",
       "displays",
-      "answered"
+      "goes",
+      "submitted"
     ]
   },
   {
@@ -297,53 +297,53 @@
       "Dimitris"
     ],
     "nouns_trf": [
-      "page",
-      "professor",
-      "description",
-      "recommendation",
       "application",
-      "management",
+      "attachment",
+      "submission",
+      "email",
+      "system",
+      "recommendation",
+      "letter.png",
+      "message",
+      "description",
+      "format",
+      "professor",
+      "letter",
+      "error",
+      "page",
+      "button",
+      "URL",
+      "File",
+      "file",
+      "field",
+      "checkbox",
       "finality",
       "form",
-      "email",
-      "File",
-      "attachment",
-      "error",
-      "letter",
-      "checkbox",
-      "field",
-      "Submit",
       "reason",
-      "message",
-      "file",
-      "URL",
+      "Submit",
       "pdf",
-      "system",
-      "button",
-      "submission",
-      "format",
-      "letter.png"
+      "management"
     ],
     "adjectives_trf": [
-      "mandatory",
-      "informative"
+      "informative",
+      "mandatory"
     ],
     "modal_verbs": [],
     "possession_verbs": [
       "containing"
     ],
     "categorization_verbs": [
-      "submitting",
-      "Select",
+      "has",
       "allowed",
-      "has"
+      "Select",
+      "submitting"
     ],
     "action_verbs": [
       "shows",
       "clicks",
-      "opens",
       "attaches",
-      "selects"
+      "selects",
+      "opens"
     ]
   }
 ]
