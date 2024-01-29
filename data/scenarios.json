@@ -3,9 +3,7 @@
     "id": "2",
     "el_text": "Ο Γιάννης που είναι υποψήφιος φοιτητής θέλει να υποβάλει μια αίτηση για το ΠΜΣ του. Συνδέεται επιτυχώς στο σύστημα κατά την περίοδο υποβολής των αιτήσεων. Το σύστημα εμφανίζει την αρχική σελίδα. Στην αρχική σελίδα του λογαριασμού του επιλέγει την σελίδα : <Η αίτηση μου> και πατάει την επιλογή <Νέα αίτηση>. Το σύστημα του εμφανίζει μία φόρμα με τα υποχρεωτικά πεδία : ονοματεπώνυμο, αριθμό ταυτότητας, στοιχεία επικοινωνίας, τμήμα/ίδρυμα αποφοίτησης και βαθμός πτυχίου, ξένες γλώσσες και πεδίο επισύναψης για τα αρχεία των δικαιολογητικών (ψηφιακά αντίγραφα της ταυτότητας, του πτυχίου, της αναλυτικής βαθμολογίας και φωτογραφία). Πιο κάτω εμφανίζονται τα πεδία για τα ονοματεπώνυμα, τις ιδιότητες και τα email δύο ατόμων που θα παράσχουν συστατική επιστολή για να υποστηρίξουν την υποψηφιότητά του. Ο Γιάννης συμπληρώνει με αυτή τη σειρά τα στοιχεία : 'Γιάννης Ξαπλόπουλος', 'ΑΝ 279058', '6943882442', 'john@go.uop.gr', 'DITUOP', '7.3', 'Αγγλικά'. Μέτα επισυνάπτει τα αρχεία : 'ταυτότητα.pdf', 'πτυχείο.pdf', 'βαθμοί.pdf', 'φωτογραφία.png'. Τέλος συμπληρώνει τα στοιχεία των δύο ατόμων όπου θα παράσχουν συστατική επιστολή για να υποστηρίξουν την υποψηφιότητά του : 'Ιωάννης Μοσχολιός', 'Επίκουρος Καθηγητής', 'ijohn@uop.gr', 'Δημήτρης Μοσχολιός', 'Επίκουρος Καθηγητής', 'ijim@uop.gr'. Ο Γιάννης υποβάλει την αίτηση μέσω κουμπιού και ακούγεται ηχητικό μήνυμα επιβεβαίωσης. Η σελίδα ανανεώνεται και εμφανίζεται η αίτηση του. Ο Γιάννης λαμβάνει ενα email στο email που καταχώρεισαι στο σύστημα που τον ενημερώνει για την επιτυχή παραλαβή της αίτησης του μαζί με ένα μοναδικό αναγνωριστικό αριθμό που αντιστοιχεί στην αίτηση.",
     "en_text": "John who is a prospective student wants to submit an application for his MSc. He successfully logs into the system during the application period. The system displays the home page. On the home page of his account he selects the page : <My application> and clicks on <New application>. The system displays a form with the mandatory fields : name, ID number, contact details, department/institution of graduation and degree, foreign languages and an attachment field for the supporting documents (digital copies of ID, degree, analytical score and photo). Below are fields for the names, titles and emails of two individuals who will provide a letter of recommendation in support of the nomination. Yiannis fills in the following details in this order : 'Yiannis Xaplopoulos', 'AN 279058', '6943882442', 'john@go.uop.gr', 'DITUOP', '7.3', 'English'. Attach the files : 'identity.pdf', 'fold.pdf', 'grades.pdf', 'photo.png'. Finally, he fills in the details of the two persons who will provide a letter of recommendation to support his candidature : 'Ioannis Moscholios', 'Assistant Professor', 'ijohn@uop.gr', 'Dimitris Moscholios', 'Assistant Professor', 'ijim@uop.gr'. Yannis submits the application via a button and an audio confirmation message is played. The page refreshes and his application is displayed. John receives an email in the email address registered in the system informing him that his application has been successfully received together with a unique identification number corresponding to the application.",
-    "useful_modal_vebs": [
-      
-    ],
+    "useful_modal_vebs": [],
     "useful_action_verbs_lemmatized": [
       "submit",
       "log",
@@ -13,99 +11,119 @@
       "provide",
       "play"
     ],
-    "useful_possession_verbs_lemmatized": [
-      
-    ],
+    "useful_possession_verbs_lemmatized": [],
     "useful_categorization_verbs_lemmatized": [
       "be"
     ],
     "proper_nouns_trf": [
-      "Moscholios",
       "Yiannis",
-      "English",
-      "AN",
       "Professor",
-      "Assistant",
-      "Yannis",
+      "English",
       "Dimitris",
+      "Xaplopoulos",
       "John",
+      "Yannis",
+      "AN",
       "Ioannis",
-      "ID",
-      "Xaplopoulos"
+      "Moscholios",
+      "Assistant",
+      "ID"
     ],
     "nouns_trf": [
-      "contact",
+      "page",
+      "documents",
+      "score",
+      "recommendation",
+      "identity.pdf",
+      "home",
+      "application",
+      "copies",
       "institution",
       "photo",
-      "emails",
-      "degree",
-      "account",
-      "message",
-      "MSc",
-      "details",
-      "attachment",
-      "form",
-      "languages",
-      "identity.pdf",
-      "ID",
-      "period",
-      "names",
-      "graduation",
-      "letter",
-      "persons",
-      "system",
-      "identification",
-      "candidature",
-      "student",
-      "application",
-      "page",
-      "fields",
-      "nomination",
-      "copies",
-      "recommendation",
       "confirmation",
-      "address",
-      "name",
-      "order",
-      "individuals",
+      "form",
       "email",
-      "titles",
-      "department",
-      "button",
-      "field",
+      "individuals",
       "files",
-      "support",
+      "name",
+      "period",
+      "attachment",
+      "letter",
+      "department",
+      "student",
+      "details",
+      "degree",
+      "graduation",
+      "field",
+      "order",
+      "languages",
+      "names",
+      "fields",
+      "contact",
+      "address",
+      "message",
+      "candidature",
+      "identification",
       "number",
-      "home",
-      "documents",
-      "score"
+      "persons",
+      "nomination",
+      "system",
+      "emails",
+      "button",
+      "titles",
+      "support",
+      "account",
+      "MSc",
+      "ID"
     ],
     "adjectives_trf": [
-      "prospective",
-      "foreign",
-      "analytical",
-      "following",
       "unique",
+      "digital",
       "mandatory",
       "New",
-      "digital",
+      "prospective",
+      "analytical",
+      "following",
+      "foreign",
       "audio"
+    ],
+    "modal_verbs": [
+      "will"
+    ],
+    "possession_verbs": [],
+    "categorization_verbs": [
+      "Attach",
+      "submit",
+      "refreshes",
+      "displayed",
+      "corresponding",
+      "supporting",
+      "registered",
+      "displays",
+      "wants",
+      "played"
+    ],
+    "action_verbs": [
+      "fills",
+      "submits",
+      "received",
+      "clicks",
+      "logs",
+      "support",
+      "selects",
+      "displays"
     ]
   },
   {
     "id": "3",
     "el_text": "Ο Δημήτρης, όπου είναι καθηγητής έλαβε ένα email από το σύστημα διαχείρησης αιτήσεων το οποίο περιέχει το URL με τη σελίδα για την υποβολή της συστατικής επιστολής. Ο Δημήτρης ανοίγει την σελίδα και του εμφανίζεται η φόρμα υποβολής με το πεδίο επισύναψης αρχείου και μία επιλογή ενω υποχρεωτικού checkbox με πληροφοριακό μήνυμα για την οριστηκότητα της υποβολης του. Ο Δημήτρης επισυνάπτει το αρχείο 'letter.pdf', επιλέγει το checkbox και πατάει το κουμπί <Υποβολή>. Το σύστημα του εμφανίζει ένα μήνυμα επιβεβαίωσης υποβολής.  ",
     "en_text": "Dimitris, who is a professor, received an email from the application management system containing the URL to the page for submitting the letter of recommendation. Dimitris opens the page and is presented with the submission form with an attachment field and a mandatory checkbox with an informative message about the finality of the submission. Dimitris attaches the 'letter.pdf' file, selects the checkbox and clicks the <Submit> button. The system displays a submission confirmation message to him.",
-    "useful_modal_vebs": [
-      
-    ],
+    "useful_modal_vebs": [],
     "useful_action_verbs_lemmatized": [
       "open",
       "display"
     ],
-    "useful_possession_verbs_lemmatized": [
-      
-    ],
+    "useful_possession_verbs_lemmatized": [],
     "useful_categorization_verbs_lemmatized": [
       "is"
     ],
@@ -113,31 +131,45 @@
       "Dimitris"
     ],
     "nouns_trf": [
-      "submission",
-      "message",
-      "attachment",
-      "checkbox",
-      "form",
-      "letter",
-      "system",
       "page",
-      "application",
-      "finality",
-      "Submit",
-      "URL",
+      "professor",
       "recommendation",
-      "confirmation",
-      "file",
-      "email",
-      "button",
-      "field",
+      "application",
       "management",
+      "finality",
+      "confirmation",
+      "form",
       "letter.pdf",
-      "professor"
+      "email",
+      "attachment",
+      "letter",
+      "checkbox",
+      "field",
+      "Submit",
+      "message",
+      "file",
+      "URL",
+      "system",
+      "button",
+      "submission"
     ],
     "adjectives_trf": [
-      "informative",
-      "mandatory"
+      "mandatory",
+      "informative"
+    ],
+    "modal_verbs": [],
+    "possession_verbs": [
+      "containing"
+    ],
+    "categorization_verbs": [
+      "submitting",
+      "displays"
+    ],
+    "action_verbs": [
+      "attaches",
+      "selects",
+      "clicks",
+      "opens"
     ]
   },
   {
@@ -152,9 +184,7 @@
       "log",
       "display"
     ],
-    "useful_possession_verbs_lemmatized": [
-      
-    ],
+    "useful_possession_verbs_lemmatized": [],
     "useful_categorization_verbs_lemmatized": [
       "be"
     ],
@@ -162,38 +192,52 @@
       "John"
     ],
     "nouns_trf": [
+      "system",
+      "page",
       "applications",
-      "home",
+      "period",
+      "message",
       "account",
       "error",
-      "MSc",
-      "message",
-      "system",
-      "student",
+      "home",
       "application",
-      "page",
-      "period"
+      "student",
+      "MSc"
     ],
     "adjectives_trf": [
+      "new",
       "New",
-      "prospective",
-      "new"
+      "prospective"
+    ],
+    "modal_verbs": [
+      "can"
+    ],
+    "possession_verbs": [],
+    "categorization_verbs": [
+      "submit",
+      "expired",
+      "displays",
+      "wants",
+      "ended"
+    ],
+    "action_verbs": [
+      "submitted",
+      "clicks",
+      "logs",
+      "selects",
+      "displays"
     ]
   },
   {
     "id": "5",
     "el_text": "Ο Κώστας όπου είναι διευθυντής μεταπτυχιακού προγράμματος, θέλει να δει τα στατιστικά στοιχεία για πλήθος συστατικών επιστολών που κατατέθηκαν. Συνδέεται στο σύστημα και το σύστημα του εμφανίζει την αρχική σελίδα. Ο Κώστας πάει στην σελίδα <Στατιστικά Στοιχεία>, διαλέγει την επιλογή απο το dropdown μενού '2022-2023' και πατάει <Προβολή πλήθους συστατικών επιστολών που κατατέθηκαν> . Έπειτα το σύστημα εμφανίζει στην οθόνη τον αριθμό μόνο τον συστατικών επιστολών που απαντήθηκαν με επιτυχία. To σύστημα εμφανίζει το αποτέλεσμα : 72 .",
     "en_text": "Kostas, who is a graduate program director, wants to see the statistics on the number of letters of recommendation submitted. He logs into the system and the system displays the home page for him. Costas goes to the <Statistics> page, selects the option from the dropdown menu '2022-2023' and clicks <View number of letters of recommendation submitted> . The system then displays on the screen the number of only those letters of recommendation that were successfully answered. The system displays the result : 72 .",
-    "useful_modal_vebs": [
-      
-    ],
+    "useful_modal_vebs": [],
     "useful_action_verbs_lemmatized": [
       "log",
       "display"
     ],
-    "useful_possession_verbs_lemmatized": [
-      
-    ],
+    "useful_possession_verbs_lemmatized": [],
     "useful_categorization_verbs_lemmatized": [
       "be"
     ],
@@ -202,38 +246,51 @@
       "Kostas"
     ],
     "nouns_trf": [
+      "system",
+      "director",
+      "page",
       "dropdown",
-      "graduate",
+      "screen",
       "recommendation",
       "program",
-      "menu",
-      "statistics",
-      "director",
-      "system",
-      "option",
-      "number",
-      "letters",
-      "page",
       "Statistics",
-      "result",
-      "screen",
-      "home"
+      "menu",
+      "letters",
+      "option",
+      "home",
+      "number",
+      "statistics",
+      "graduate",
+      "result"
     ],
-    "adjectives_trf": []
+    "adjectives_trf": [],
+    "modal_verbs": [],
+    "possession_verbs": [],
+    "categorization_verbs": [
+      "submitted",
+      "see",
+      "clicks",
+      "View",
+      "selects",
+      "wants"
+    ],
+    "action_verbs": [
+      "submitted",
+      "logs",
+      "goes",
+      "displays",
+      "answered"
+    ]
   },
   {
     "id": "6",
     "el_text": "Ο Δημήτρης, όπου είναι καθηγητής έλαβε ένα email από το σύστημα διαχείρησης αιτήσεων το οποίο περιέχει το URL με τη σελίδα για την υποβολή της συστατικής επιστολής. Ο Δημήτρης ανοίγει την σελίδα και του εμφανίζεται η φόρμα υποβολής με το πεδίο επισύναψης αρχείου το οποίο έχει την περιγραφή 'Select pdf file' και μία επιλογή ενω υποχρεωτικού checkbox με πληροφοριακό μήνυμα για την οριστηκότητα της υποβολης του. Ο Δημήτρης επισυνάπτει το αρχείο 'letter.png', επιλέγει το checkbox και πατάει το κουμπί <Υποβολή>. Το σύστημα του εμφανίζει ένα μήνυμα σφάλματος υποβολής με αιτιολογία <Μη επιτρεπτή μορφή αρχείου>.  ",
     "en_text": "Dimitris, who is a professor, received an email from the application management system containing the URL to the page for submitting the letter of recommendation. Dimitris opens the page and is presented with the submission form with the attachment field which has the description 'Select pdf file' and a mandatory checkbox with an informative message about the finality of the submission. Dimitris attaches the 'letter.png' file, selects the checkbox and clicks the <Submit> button. The system shows him a submission error message with the reason <File format not allowed>.  ",
-    "useful_modal_vebs": [
-      
-    ],
+    "useful_modal_vebs": [],
     "useful_action_verbs_lemmatized": [
       "show"
     ],
-    "useful_possession_verbs_lemmatized": [
-      
-    ],
+    "useful_possession_verbs_lemmatized": [],
     "useful_categorization_verbs_lemmatized": [
       "be"
     ],
@@ -241,36 +298,53 @@
       "Dimitris"
     ],
     "nouns_trf": [
-      "format",
-      "submission",
-      "message",
-      "attachment",
-      "checkbox",
-      "form",
-      "letter",
-      "system",
       "page",
+      "professor",
+      "description",
+      "recommendation",
       "application",
+      "management",
       "finality",
+      "form",
+      "email",
+      "File",
+      "attachment",
+      "error",
+      "letter",
+      "checkbox",
+      "field",
       "Submit",
       "reason",
-      "URL",
-      "recommendation",
+      "message",
       "file",
-      "email",
+      "URL",
+      "pdf",
+      "system",
       "button",
-      "letter.png",
-      "description",
-      "field",
-      "management",
-      "professor",
-      "error",
-      "File",
-      "pdf"
+      "submission",
+      "format",
+      "letter.png"
     ],
     "adjectives_trf": [
-      "informative",
-      "mandatory"
+      "mandatory",
+      "informative"
+    ],
+    "modal_verbs": [],
+    "possession_verbs": [
+      "containing"
+    ],
+    "categorization_verbs": [
+      "submitting",
+      "Select",
+      "allowed",
+      "has"
+    ],
+    "action_verbs": [
+      "shows",
+      "clicks",
+      "opens",
+      "attaches",
+      "selects"
     ]
   }
 ]

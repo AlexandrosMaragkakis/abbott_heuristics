@@ -4,8 +4,6 @@ from utilities import load_scenarios_from_file
 import json
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, Text2TextGenerationPipeline
 
-#TODO: make it more modular
-
 d1 = "have ownership or possession of"
 d2 = "is of type"
 d3 = "perform an action"
@@ -29,7 +27,7 @@ def wsd_gen(word, context, d1, d2, d3):
 
 # make argument parser for model choice
 parser = argparse.ArgumentParser(description="Use abbott's heuristics in software engineering scenarios using spacy models.") 
-parser.add_argument("--model", choices=["sm", "md", "lg", "trf"], help="Choose model to use.", required=True)
+parser.add_argument("--model", choices=["sm", "md", "lg", "trf"], help="Choose model to use. Best results with 'trf'.", required=True)
 args = parser.parse_args()
 
 # Load spacy model
@@ -102,7 +100,10 @@ for scenario in scenarios:
         scenario["proper_nouns_" + args.model] = list(proper_nouns)
         scenario["nouns_" + args.model] = list(nouns)
         scenario["adjectives_" + args.model] = list(adjectives)
-        scenario["modal_verbs_"] = list(modal_verbs)
+        scenario["modal_verbs"] = list(modal_verbs)
+        scenario["possession_verbs"] = list(possession_verbs)
+        scenario["categorization_verbs"] = list(categorization_verbs)
+        scenario["action_verbs"] = list(action_verbs)
 
 # save the updated scenarios to the JSON file
 with open('data/scenarios.json', 'w') as f:
