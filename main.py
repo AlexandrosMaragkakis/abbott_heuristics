@@ -9,7 +9,8 @@ warnings.filterwarnings("ignore", category=UserWarning, module="transformers")
 
 import spacy
 print("Loading WSD model... ", end="")
-from utilities import load_scenarios_from_file, wsd_gen
+from utilities import load_scenarios_from_file
+from model_utilities import wsd_gen
 print("Done.")
 import json
 

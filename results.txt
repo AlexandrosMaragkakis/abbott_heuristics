@@ -1,0 +1,46 @@
+
+--------------------------------------------------------------------
+Scenario: 1
+
+Useful nouns: ['page', 'attachment', 'student', 'confirmation', 'letter', 'account', 'form', 'message', 'home', 'email', 'application']
+Useful proper nouns: ['Yiannis', 'John']
+Useful adjectives: ['mandatory', 'unique']
+Useful action_verbs: ['displays', 'logs', 'submits']
+Useful categorization_verbs: []
+
+--------------------------------------------------------------------
+Scenario: 2
+
+Useful nouns: ['page', 'attachment', 'file', 'letter', 'URL', 'form', 'message', 'email', 'professor']
+Useful proper nouns: ['Dimitris']
+Useful adjectives: ['mandatory', 'informative']
+Useful action_verbs: ['opens']
+Useful categorization_verbs: []
+
+--------------------------------------------------------------------
+Scenario: 3
+
+Useful nouns: ['error', 'page', 'student', 'period', 'account', 'message', 'home', 'application']
+Useful proper nouns: ['John']
+Useful adjectives: ([], ['new', 'New', 'prospective'])
+Useful action_verbs: ['displays', 'logs']
+Useful categorization_verbs: []
+Useful modal_verbs: ['can']
+
+--------------------------------------------------------------------
+Scenario: 4
+
+Useful nouns: ['result', 'page', 'director', 'letters', 'Statistics', 'home']
+Useful proper nouns: ['Kostas', 'Costas']
+Useful adjectives: ([], [])
+Useful action_verbs: ['displays', 'logs']
+Useful categorization_verbs: []
+
+--------------------------------------------------------------------
+Scenario: 5
+
+Useful nouns: ['page', 'file', 'form', 'message', 'email', 'professor']
+Useful proper nouns: ['Dimitris']
+Useful adjectives: ['mandatory', 'informative']
+Useful action_verbs: ['shows']
+Useful categorization_verbs: []
