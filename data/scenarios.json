@@ -29,6 +29,10 @@
       "Assistant",
       "ID"
     ],
+    "useful_proper_nouns": [
+      "Yiannis",
+      "John"
+    ],
     "nouns_trf": [
       "page",
       "documents",
@@ -76,6 +80,19 @@
       "MSc",
       "ID"
     ],
+    "useful_nouns": [
+      "student",
+      "application",
+      "account",
+      "form",
+      "letter",
+      "attachment",
+      "email",
+      "message",
+      "page",
+      "confirmation",
+      "home"
+    ],
     "adjectives_trf": [
       "unique",
       "digital",
@@ -86,6 +103,10 @@
       "following",
       "foreign",
       "audio"
+    ],
+    "useful_adjectives": [
+      "mandatory",
+      "unique"
     ],
     "modal_verbs": [
       "will"
@@ -130,6 +151,9 @@
     "proper_nouns_trf": [
       "Dimitris"
     ],
+    "useful_proper_nouns":[
+      "Dimitris"
+    ],
     "nouns_trf": [
       "page",
       "professor",
@@ -153,7 +177,23 @@
       "button",
       "submission"
     ],
+    "useful_nouns": [
+      "page",
+      "form",
+      "attachment",
+      "letter",
+      "page",
+      "professor",
+      "URL",
+      "email",
+      "message",
+      "file"
+    ],
     "adjectives_trf": [
+      "mandatory",
+      "informative"
+    ],
+    "useful_adjectives": [
       "mandatory",
       "informative"
     ],
@@ -190,6 +230,9 @@
     "proper_nouns_trf": [
       "John"
     ],
+    "useful_proper_nouns":[
+      "John"
+    ],
     "nouns_trf": [
       "system",
       "page",
@@ -203,10 +246,23 @@
       "student",
       "MSc"
     ],
+    "useful_nouns": [
+      "page",
+      "application",
+      "account",
+      "message",
+      "period",
+      "error",
+      "home",
+      "student"
+    ],
     "adjectives_trf": [
       "new",
       "New",
       "prospective"
+    ],
+    "useful_adjectives": [
+      
     ],
     "modal_verbs": [
       "can"
@@ -244,6 +300,10 @@
       "Costas",
       "Kostas"
     ],
+    "useful_proper_nouns": [
+      "Costas",
+      "Kostas"
+    ],
     "nouns_trf": [
       "system",
       "director",
@@ -260,6 +320,15 @@
       "number",
       "statistics",
       "graduate",
+      "result"
+    ],
+    "useful_nouns": [
+      "director",
+      "page",
+      "letter",
+      "Statistics",
+      "letters",
+      "home",
       "result"
     ],
     "adjectives_trf": [],
@@ -296,6 +365,9 @@
     "proper_nouns_trf": [
       "Dimitris"
     ],
+    "useful_proper_nouns":[
+      "Dimitris"
+    ],
     "nouns_trf": [
       "page",
       "professor",
@@ -324,7 +396,19 @@
       "format",
       "letter.png"
     ],
+    "useful_nouns": [
+      "page",
+      "professor",
+      "form",
+      "email",
+      "file",
+      "message"
+    ],
     "adjectives_trf": [
+      "mandatory",
+      "informative"
+    ],
+    "useful_adjectives": [
       "mandatory",
       "informative"
     ],
