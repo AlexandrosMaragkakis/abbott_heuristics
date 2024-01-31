@@ -15,7 +15,7 @@
     "useful_categorization_verbs": [
       "is"
     ],
-    "proper_nouns_trf": [
+    "proper_nouns": [
       "Yiannis",
       "Professor",
       "English",
@@ -33,7 +33,7 @@
       "Yiannis",
       "John"
     ],
-    "nouns_trf": [
+    "nouns": [
       "page",
       "documents",
       "score",
@@ -93,7 +93,7 @@
       "confirmation",
       "home"
     ],
-    "adjectives_trf": [
+    "adjectives": [
       "unique",
       "digital",
       "mandatory",
@@ -148,13 +148,13 @@
     "useful_categorization_verbs": [
       "is"
     ],
-    "proper_nouns_trf": [
+    "proper_nouns": [
       "Dimitris"
     ],
     "useful_proper_nouns":[
       "Dimitris"
     ],
-    "nouns_trf": [
+    "nouns": [
       "page",
       "professor",
       "recommendation",
@@ -189,7 +189,7 @@
       "message",
       "file"
     ],
-    "adjectives_trf": [
+    "adjectives": [
       "mandatory",
       "informative"
     ],
@@ -227,13 +227,13 @@
     "useful_categorization_verbs": [
       "is"
     ],
-    "proper_nouns_trf": [
+    "proper_nouns": [
       "John"
     ],
     "useful_proper_nouns":[
       "John"
     ],
-    "nouns_trf": [
+    "nouns": [
       "system",
       "page",
       "applications",
@@ -256,7 +256,7 @@
       "home",
       "student"
     ],
-    "adjectives_trf": [
+    "adjectives": [
       "new",
       "New",
       "prospective"
@@ -296,7 +296,7 @@
     "useful_categorization_verbs": [
       "is"
     ],
-    "proper_nouns_trf": [
+    "proper_nouns": [
       "Costas",
       "Kostas"
     ],
@@ -304,7 +304,7 @@
       "Costas",
       "Kostas"
     ],
-    "nouns_trf": [
+    "nouns": [
       "system",
       "director",
       "page",
@@ -331,7 +331,7 @@
       "home",
       "result"
     ],
-    "adjectives_trf": [],
+    "adjectives": [],
     "modal_verbs": [],
     "possession_verbs": [],
     "categorization_verbs": [
@@ -362,13 +362,13 @@
     "useful_categorization_verbs": [
       "is"
     ],
-    "proper_nouns_trf": [
+    "proper_nouns": [
       "Dimitris"
     ],
     "useful_proper_nouns":[
       "Dimitris"
     ],
-    "nouns_trf": [
+    "nouns": [
       "page",
       "professor",
       "description",
@@ -404,7 +404,7 @@
       "file",
       "message"
     ],
-    "adjectives_trf": [
+    "adjectives": [
       "mandatory",
       "informative"
     ],

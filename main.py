@@ -88,9 +88,9 @@ for scenario in scenarios:
                     action_verbs.add(token.text)
                    
         # add the sets to the scenario json file
-        scenario["proper_nouns_" + args.model] = list(proper_nouns)
-        scenario["nouns_" + args.model] = list(nouns)
-        scenario["adjectives_" + args.model] = list(adjectives)
+        scenario["proper_nouns"] = list(proper_nouns)
+        scenario["nouns"] = list(nouns)
+        scenario["adjectives"] = list(adjectives)
         scenario["modal_verbs"] = list(modal_verbs)
         scenario["possession_verbs"] = list(possession_verbs)
         scenario["categorization_verbs"] = list(categorization_verbs)
