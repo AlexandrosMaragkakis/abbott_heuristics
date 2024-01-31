@@ -1,0 +1,169 @@
+[
+  {
+    "id": "1",
+    "en_text": "John who is a prospective student wants to submit an application for his MSc. He successfully logs into the system during the application period. The system displays the home page. On the home page of his account he selects the page : <My application> and clicks on <New application>. The system displays a form with the mandatory fields : name, ID number, contact details, department/institution of graduation and degree, foreign languages and an attachment field for the supporting documents (digital copies of ID, degree, analytical score and photo). Below are fields for the names, titles and emails of two individuals who will provide a letter of recommendation in support of the nomination. Yiannis fills in the following details in this order : 'Yiannis Xaplopoulos', 'AN 279058', '6943882442', 'john@go.uop.gr', 'DITUOP', '7.3', 'English'. Attach the files : 'identity.pdf', 'fold.pdf', 'grades.pdf', 'photo.png'. Finally, he fills in the details of the two persons who will provide a letter of recommendation to support his candidature : 'Ioannis Moscholios', 'Assistant Professor', 'ijohn@uop.gr', 'Dimitris Moscholios', 'Assistant Professor', 'ijim@uop.gr'. Yannis submits the application via a button and an audio confirmation message is played. The page refreshes and his application is displayed. John receives an email in the email address registered in the system informing him that his application has been successfully received together with a unique identification number corresponding to the application.",
+    "useful_modal_verbs": [],
+    "useful_action_verbs": [
+      "submits",
+      "logs",
+      "displays",
+      "provide",
+      "played"
+    ],
+    "useful_possession_verbs": [],
+    "useful_categorization_verbs": [
+      "is"
+    ],
+    "useful_proper_nouns": [
+      "Yiannis",
+      "John"
+    ],
+    "useful_nouns": [
+      "student",
+      "application",
+      "account",
+      "form",
+      "letter",
+      "attachment",
+      "email",
+      "message",
+      "page",
+      "confirmation",
+      "home"
+    ],
+    "useful_adjectives": [
+      "mandatory",
+      "unique"
+    ]
+  },
+  {
+    "id": "2",
+    "en_text": "Dimitris, who is a professor, received an email from the application management system containing the URL to the page for submitting the letter of recommendation. Dimitris opens the page and is presented with the submission form with an attachment field and a mandatory checkbox with an informative message about the finality of the submission. Dimitris attaches the 'letter.pdf' file, selects the checkbox and clicks the <Submit> button. The system displays a submission confirmation message to him.",
+    "useful_modal_verbs": [],
+    "useful_action_verbs": [
+      "opens",
+      "displays"
+    ],
+    "useful_possession_verbs": [],
+    "useful_categorization_verbs": [
+      "is"
+    ],
+    
+    "useful_proper_nouns":[
+      "Dimitris"
+    ],
+    
+    "useful_nouns": [
+      "page",
+      "form",
+      "attachment",
+      "letter",
+      "page",
+      "professor",
+      "URL",
+      "email",
+      "message",
+      "file"
+    ],
+    
+    "useful_adjectives": [
+      "mandatory",
+      "informative"
+    ]
+    
+  },
+  {
+    "id": "3",
+    "en_text": "John who is a prospective student wants to submit an application for his MSc. He successfully logs into the system after the application period has ended. The system displays the home page. On the home page of his account he selects the page :<My application> and clicks on <New application>. The system displays an error message 'The application period has expired and no new applications can be submitted'.",
+    "useful_modal_verbs": [
+      "can"
+    ],
+    "useful_action_verbs": [
+      "logs",
+      "displays"
+    ],
+    "useful_possession_verbs": [],
+    "useful_categorization_verbs": [
+      "is"
+    ],
+    
+    "useful_proper_nouns":[
+      "John"
+    ],
+    
+    "useful_nouns": [
+      "page",
+      "application",
+      "account",
+      "message",
+      "period",
+      "error",
+      "home",
+      "student"
+    ],
+    
+    "useful_adjectives": [
+      
+    ]
+  },
+  {
+    "id": "4",
+    "en_text": "Kostas, who is a graduate program director, wants to see the statistics on the number of letters of recommendation submitted. He logs into the system and the system displays the home page for him. Costas goes to the <Statistics> page, selects the option from the dropdown menu '2022-2023' and clicks <View number of letters of recommendation submitted> . The system then displays on the screen the number of only those letters of recommendation that were successfully answered. The system displays the result : 72 .",
+    "useful_modal_verbs": [],
+    "useful_action_verbs": [
+      "logs",
+      "displays"
+    ],
+    "useful_possession_verbs": [],
+    "useful_categorization_verbs": [
+      "is"
+    ],
+    
+    "useful_proper_nouns": [
+      "Costas",
+      "Kostas"
+    ],
+    
+    "useful_nouns": [
+      "director",
+      "page",
+      "letter",
+      "Statistics",
+      "letters",
+      "home",
+      "result"
+    ],
+    
+    "useful_adjectives": []
+  },
+  {
+    "id": "5",
+    "en_text": "Dimitris, who is a professor, received an email from the application management system containing the URL to the page for submitting the letter of recommendation. Dimitris opens the page and is presented with the submission form with the attachment field which has the description 'Select pdf file' and a mandatory checkbox with an informative message about the finality of the submission. Dimitris attaches the 'letter.png' file, selects the checkbox and clicks the <Submit> button. The system shows him a submission error message with the reason <File format not allowed>.  ",
+    "useful_modal_verbs": [],
+    "useful_action_verbs": [
+      "shows"
+    ],
+    "useful_possession_verbs": [],
+    "useful_categorization_verbs": [
+      "is"
+    ],
+    
+    "useful_proper_nouns":[
+      "Dimitris"
+    ],
+    
+    "useful_nouns": [
+      "page",
+      "professor",
+      "form",
+      "email",
+      "file",
+      "message"
+    ],
+    
+    "useful_adjectives": [
+      "mandatory",
+      "informative"
+    ]
+  }
+]

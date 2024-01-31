@@ -42,14 +42,7 @@ for scenario in scenarios:
         common_verbs = compare_lists(verb_list1, verb_list2)
         
         with open('results.txt', 'a') as file:
-            file.write(f"Useful {verb_type_field_name}: {common_verbs}\n")
+            file.write(f"{verb_types_field_names[verb_type_field_name]}: {common_verbs}\n")
 
-
-
-
-        
-        
-
-        
         #print()
     

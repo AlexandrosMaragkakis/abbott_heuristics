@@ -18,7 +18,7 @@ def compare_lists(list1, list2):
     # handle ValueError: not enough values to unpack (expected 2, got 0)
 
     if len(list1) == 0 or len(list2) == 0:
-        return [], list1 + list2
+        return []
     
     common_elements = list(set(list1) & set(list2))
     return common_elements
