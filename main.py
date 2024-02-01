@@ -1,5 +1,6 @@
 import warnings
 import spacy
+from spacy.cli import download
 from utilities import load_scenarios_from_file, validate_file_argument, save_scenarios_to_file, validate_json
 import argparse
 
@@ -45,18 +46,32 @@ verb_types = [d1, d2, d3]
 modal_verbs_list = ["can", "could", "might", "must", "shall", "should", "will", "would", "must", "may"]
 
 print("Loading spacy model...", end="")
+if not spacy.util.is_package(f"en_core_web_{args.m}"):
+        print(f"Model '{args.m}' not found.")
+        
+        # ask if user wants to download the model, print model sizes
+        print("Model sizes: sm = 12 MB, md = 40 MB, lg = 560 MB, trf = 440 MB")
+        confirm = input("Do you want to download the model? (y/n) ")
+        if confirm.lower() != "y":
+            exit()
+        
+
+        download(f"en_core_web_{args.m}")
+
 # Load spacy model
-if args.m == "sm":
-    nlp_en = spacy.load("en_core_web_sm") # size 12 MB
-elif args.m == "md":
-    nlp_en = spacy.load("en_core_web_md") # size 40 MB 
-elif args.m == "lg":
-    nlp_en = spacy.load("en_core_web_lg") # size 560 MB
-elif args.m == "trf":
-    nlp_en = spacy.load("en_core_web_trf") # size 440 MB, 3 GB with dependencies
-else: # cant happen because of "required=True" in parser?
-    raise ValueError("Invalid model. Supported values: 'sm', 'md', 'lg', 'trf'")
+# if args.m == "sm":
+#     nlp_en = spacy.load("en_core_web_sm") # size 12 MB
+# elif args.m == "md":
+#     nlp_en = spacy.load("en_core_web_md") # size 40 MB 
+# elif args.m == "lg":
+#     nlp_en = spacy.load("en_core_web_lg") # size 560 MB
+# elif args.m == "trf":
+#     nlp_en = spacy.load("en_core_web_trf") # size 440 MB, 3 GB with dependencies
+# else: # cant happen because of "required=True" in parser?
+#     raise ValueError("Invalid model. Supported values: 'sm', 'md', 'lg', 'trf'")
 print("Done.")
+
+nlp_en = spacy.load(f"en_core_web_{args.m}")
 
 # Load scenarios from input file
 scenarios = load_scenarios_from_file(args.i)

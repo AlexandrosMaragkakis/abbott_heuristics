@@ -12,12 +12,6 @@ curated-tokenizers==0.0.8
 curated-transformers==0.1.1
 cymem==2.0.8
 deepl==1.16.1
-el-core-news-md @ https://github.com/explosion/spacy-models/releases/download/el_core_news_md-3.7.0/el_core_news_md-3.7.0-py3-none-any.whl
-el-core-news-sm @ https://github.com/explosion/spacy-models/releases/download/el_core_news_sm-3.7.0/el_core_news_sm-3.7.0-py3-none-any.whl
-en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.7.1/en_core_web_lg-3.7.1-py3-none-any.whl
-en-core-web-md @ https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.7.1/en_core_web_md-3.7.1-py3-none-any.whl
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
-en-core-web-trf @ https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.7.3/en_core_web_trf-3.7.3-py3-none-any.whl
 filelock==3.13.1
 fsspec==2023.12.2
 googletrans==4.0.0rc1
