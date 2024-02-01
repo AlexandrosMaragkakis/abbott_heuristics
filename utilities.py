@@ -4,6 +4,7 @@ from pathlib import Path
 from argparse import ArgumentTypeError
 from jsonschema import validate, ValidationError
 
+GENERIC_JSON_FORMAT_ERROR = "Invalid JSON format: "
 
 def load_scenarios_from_file(file_path):
     try:
@@ -58,7 +59,7 @@ def load_schema(file_path):
     except FileNotFoundError:
         raise FileNotFoundError("File not found: " + file_path)
     except json.JSONDecodeError:
-        raise json.JSONDecodeError("Invalid JSON format: " + file_path)
+        raise json.JSONDecodeError(GENERIC_JSON_FORMAT_ERROR + file_path)
 
 def validate_json(file_path):
 
@@ -70,11 +71,11 @@ def validate_json(file_path):
     except FileNotFoundError:
         raise FileNotFoundError("File not found: " + file_path)
     except json.JSONDecodeError:
-        raise json.JSONDecodeError("Invalid JSON format: " + file_path)
+        raise json.JSONDecodeError(GENERIC_JSON_FORMAT_ERROR + file_path)
     
 
     try:
         validate(instance=json_data, schema=schema)
         return True
-    except ValidationError as e:
-        raise ValidationError("Invalid JSON format: " + file_path)
+    except ValidationError:
+        raise ValidationError(GENERIC_JSON_FORMAT_ERROR + file_path)

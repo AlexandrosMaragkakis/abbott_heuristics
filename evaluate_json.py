@@ -12,6 +12,8 @@ args = parser.parse_args()
 
 scenarios = load_scenarios_from_file(args.file)
 
+output_file = "results.txt"
+
 for scenario in scenarios:  
     if not scenario.get("action_verbs"):
         raise ValueError("Missing 'action_verbs' field in scenario. Make sure you ran main.py first.")
@@ -23,7 +25,7 @@ for scenario in scenarios:
         common_adjectives = compare_lists(scenario["adjectives"], scenario["useful_adjectives"])
 
         # open txt file to log the results
-        with open('results.txt', 'a') as file:
+        with open(output_file, 'a') as file:
             file.write("\n--------------------------------------------------------------------\n")
             file.write(f"Scenario: {scenario['id']}\n\n")
             file.write(f"Classes: {common_nouns}\n")
@@ -43,7 +45,7 @@ for scenario in scenarios:
             
             common_verbs = compare_lists(verb_list1, verb_list2)
             
-            with open('results.txt', 'a') as file:
+            with open(output_file, 'a') as file:
                 file.write(f"{verb_types_field_names[verb_type_field_name]}: {common_verbs}\n")
     except KeyError:
         #raise ValueError("Missing 'useful_action_verbs' field in scenario. Make sure you ran main.py first.")
@@ -51,7 +53,7 @@ for scenario in scenarios:
         
 
     
-        with open('results.txt', 'a') as file:
+        with open(output_file, 'a') as file:
             file.write("\n--------------------------------------------------------------------\n")
             file.write(f"Scenario: {scenario['id']}\n\n")
             file.write(f"Possible classes: {scenario['nouns']}\n")
