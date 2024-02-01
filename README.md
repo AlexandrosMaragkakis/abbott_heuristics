@@ -80,7 +80,7 @@ The output JSON file will contain the same scenarios, with additional fields for
 
 The project also includes some utility scripts, such as:
 
-- `translate.py`: A script to translate Greek scenarios to English or vice versa, using either Google or DeepL translation service.
+- `translate.py`: A script to translate Greek scenarios to English, using either Google or DeepL translation service. The scenarios need to be in a JSON file, just like above.
 - `evaluate_json.py`: A script to evaluate the JSON fields according to Abbott's heuristics, and save the results in a text file.
 
 For more details on how to use these scripts, please refer to their source code and comments.
