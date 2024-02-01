@@ -2,16 +2,16 @@
 --------------------------------------------------------------------
 Scenario: 1
 
-Classes: ['confirmation', 'page', 'attachment', 'home', 'letter', 'application', 'email', 'message', 'student', 'account', 'form']
-CLass Instances: ['John', 'Yiannis']
+Classes: ['confirmation', 'application', 'letter', 'form', 'page', 'attachment', 'email', 'student', 'home', 'message', 'account']
+CLass Instances: ['Yiannis', 'John']
 Attributes: ['unique', 'mandatory']
-Functionalities: ['displays', 'submits', 'logs']
+Functionalities: ['submits', 'displays', 'logs']
 Aggregations: []
 
 --------------------------------------------------------------------
 Scenario: 2
 
-Classes: ['file', 'attachment', 'page', 'URL', 'letter', 'email', 'message', 'professor', 'form']
+Classes: ['letter', 'page', 'form', 'URL', 'attachment', 'email', 'message', 'file', 'professor']
 CLass Instances: ['Dimitris']
 Attributes: ['informative', 'mandatory']
 Functionalities: ['opens']
@@ -20,7 +20,7 @@ Aggregations: []
 --------------------------------------------------------------------
 Scenario: 3
 
-Classes: ['page', 'home', 'application', 'period', 'message', 'student', 'account', 'error']
+Classes: ['error', 'application', 'page', 'student', 'home', 'message', 'account', 'period']
 CLass Instances: ['John']
 Attributes: []
 Functionalities: ['displays', 'logs']
@@ -30,7 +30,7 @@ Restrictions: ['can']
 --------------------------------------------------------------------
 Scenario: 4
 
-Classes: ['result', 'director', 'Statistics', 'page', 'home', 'letters']
+Classes: ['letters', 'page', 'home', 'director', 'result', 'Statistics']
 CLass Instances: ['Kostas', 'Costas']
 Attributes: []
 Functionalities: ['displays', 'logs']
@@ -39,7 +39,7 @@ Aggregations: []
 --------------------------------------------------------------------
 Scenario: 5
 
-Classes: ['file', 'page', 'email', 'message', 'professor', 'form']
+Classes: ['page', 'form', 'email', 'file', 'message', 'professor']
 CLass Instances: ['Dimitris']
 Attributes: ['informative', 'mandatory']
 Functionalities: ['shows']
