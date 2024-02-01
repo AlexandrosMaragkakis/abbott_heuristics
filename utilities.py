@@ -17,9 +17,11 @@ def load_scenarios_from_file(file_path):
         return None
     
 
-
-
 def save_scenarios_to_file(file_name, scenarios):
+    """
+    Saves scenarios to a file, with automatic file name generation if the file already exists.
+    
+    """
     file_path, file_extension = os.path.splitext(file_name)
     index = 1
     while Path(file_path + str(index) + file_extension).exists():
@@ -32,7 +34,6 @@ def save_scenarios_to_file(file_name, scenarios):
 
 # return the common elements
 def compare_lists(list1, list2):
-    # handle ValueError: not enough values to unpack (expected 2, got 0)
 
     if len(list1) == 0 or len(list2) == 0:
         return []

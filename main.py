@@ -13,7 +13,7 @@ args = parser.parse_args()
 
 if args.v == "t5":
     print("Model size = 3.95 GB")
-    print("RAM required for model = 10 GB")
+    print("Free RAM required to run model = 5 GB")
     # ask if user wants to continue
     confirm = input("Do you want to continue? (y/n) ")
     if confirm.lower() != "y":
@@ -21,17 +21,21 @@ if args.v == "t5":
     warnings.filterwarnings("ignore", category=UserWarning, module="transformers")
     print("Loading WSD model... ", end="")
     from model_utilities import wsd_gen
-    print("Done.")
+    print("Done")
 
 elif args.v == "wordnet":
     from verb_classification_wordnet import disambiguate_and_check, load_synsets_from_file
+    print("Loading verb synsets... ", end="")
+    possession_verbs_synsets = load_synsets_from_file("possession_verbs_synsets.txt")
+    categorization_verbs_synsets = load_synsets_from_file("categorization_verbs_synsets.txt")
+    print("Done")
 else:
     print("Invalid value for -v. Must be 'wordnet' or 't5'.")
     exit()
 
-possession_verbs_synsets = load_synsets_from_file("possession_verbs_synsets.txt")
-categorization_verbs_synsets = load_synsets_from_file("categorization_verbs_synsets.txt")
 
+
+# descriptions for verb disambiguation
 d1 = "have ownership or possession of"
 d2 = "is of type"
 d3 = "perform an action"
@@ -57,12 +61,10 @@ print(args.i)
 # Load scenarios from input file
 scenarios = load_scenarios_from_file(args.i)
 
-# scenario counter to show progress
-counter = 1
+
 
 for scenario in scenarios:
-    
-    print(f"Processing scenario {counter}/{len(scenarios)}")
+    print("Processing scenario with ID: " + scenario["id"])
 
     try: 
         en_text = scenario.get("en_text")
@@ -81,7 +83,7 @@ for scenario in scenarios:
     action_verbs = set()
 
     for token in doc:
-        # 'is' -> AUX
+        # 'is' -> AUX, maybe hard code it?
 
         # Check if the token is a proper noun
         if token.pos_ == "PROPN":
@@ -135,7 +137,6 @@ for scenario in scenarios:
         scenario["categorization_verbs"] = list(categorization_verbs)
         scenario["action_verbs"] = list(action_verbs)
 
-    counter += 1
 
 
 save_scenarios_to_file(args.o, scenarios)

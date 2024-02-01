@@ -13,14 +13,17 @@ def load_synsets_from_file(file_path):
             synsets = [synset.strip() for synset in file.readlines()]
         return synsets
     except FileNotFoundError:
-        print("File not found.")
-        return None
+        print("File with synsets not found. Retrying... ")
+        find_possessive_and_stative_synsets()
+        return load_synsets_from_file(file_path)
 
 
 def disambiguate_and_check(sentence, word, word_list):
     verb_synset = lesk(sentence, word, 'v')
-    if word == 'is':
-        print(str(verb_synset))
+
+    # sometimes lesk is not able to find a synset
+    if verb_synset is None:
+        return False
     return str(verb_synset) in word_list
 
 def find_possessive_and_stative_synsets():
