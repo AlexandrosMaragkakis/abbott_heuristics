@@ -1,7 +1,6 @@
 import warnings
 import spacy
-from utilities import load_scenarios_from_file, validate_file_argument, save_scenarios_to_file
-import json
+from utilities import load_scenarios_from_file, validate_file_argument, save_scenarios_to_file, validate_json
 import argparse
 
 parser = argparse.ArgumentParser(description="Use abbott's heuristics in software engineering scenarios.") 
@@ -10,6 +9,8 @@ parser.add_argument("-i", metavar="input_file", help="Path to the JSON file cont
 parser.add_argument("-o", metavar="output_file", help="Path to the output JSON file.", required=True, type=validate_file_argument)
 parser.add_argument("-v", choices=["wordnet", "t5"], help="Choose method for verb classification.", required=True)
 args = parser.parse_args()
+
+validate_json(args.i)
 
 if args.v == "t5":
     print("Model size = 3.95 GB")
@@ -57,7 +58,6 @@ else: # cant happen because of "required=True" in parser?
     raise ValueError("Invalid model. Supported values: 'sm', 'md', 'lg', 'trf'")
 print("Done.")
 
-print(args.i)
 # Load scenarios from input file
 scenarios = load_scenarios_from_file(args.i)
 

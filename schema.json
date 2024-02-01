@@ -1,0 +1,78 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "required": ["id", "en_text"],
+        "properties": {
+            "id": {
+                "type": "string"
+            },
+            "en_text": {
+                "type": "string"
+            },
+            "el_text": {
+                "type": "string"
+            },
+            "field1": {
+                "type": "string"
+            },
+            "field2": {
+                "type": "string"
+            },
+            "useful_modal_verbs": {
+                "type": "array"
+            },
+            "useful_action_verbs": {
+                "type": "array"
+            },
+            "useful_possession_verbs": {
+                "type": "array"
+            },
+            "useful_categorization_verbs": {
+                "type": "array"
+            },
+            "useful_proper_nouns": {
+                "type": "array"
+            },
+            "useful_nouns": {
+                "type": "array"
+            },
+            "useful_adjectives": {
+                "type": "array"
+            }
+        },
+        "anyOf": [
+            {
+                "required": ["useful_modal_verbs", "useful_action_verbs", "useful_possession_verbs", "useful_categorization_verbs", "useful_proper_nouns", "useful_nouns", "useful_adjectives"]
+            },
+            {
+                "not": {
+                    "anyOf": [
+                        {
+                            "required": ["useful_modal_verbs"]
+                        },
+                        {
+                            "required": ["useful_action_verbs"]
+                        },
+                        {
+                            "required": ["useful_possession_verbs"]
+                        },
+                        {
+                            "required": ["useful_categorization_verbs"]
+                        },
+                        {
+                            "required": ["useful_proper_nouns"]
+                        },
+                        {
+                            "required": ["useful_nouns"]
+                        },
+                        {
+                            "required": ["useful_adjectives"]
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
